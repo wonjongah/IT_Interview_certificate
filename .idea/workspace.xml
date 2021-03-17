@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31f43b8d-d55f-47e2-ae40-b813c4f772c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SQLD/1장. 데이터 모델링의 이해/2. 엔터티(Entity).md" beforeDir="false" afterPath="$PROJECT_DIR$/SQLD/1장. 데이터 모델링의 이해/2. 엔터티(Entity).md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/정보처리기사/01. 요구사항 확인/chapter01.md" beforeDir="false" afterPath="$PROJECT_DIR$/정보처리기사/01. 요구사항 확인/chapter01.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQLD/3장. SQL 활용/06. 윈도우 함수.md" beforeDir="false" afterPath="$PROJECT_DIR$/SQLD/3장. SQL 활용/06. 윈도우 함수.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
