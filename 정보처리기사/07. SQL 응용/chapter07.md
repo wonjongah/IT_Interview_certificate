@@ -455,3 +455,49 @@ ROLLBACK TO SAVEPOINT SAVEPOINT명;
 |            | FULL OUTER JOIN  | 양쪽의 모든 데이터 추출                                      |
 | SELF JOIN  | SELF JOIN        | 한 테이블 내에서 조인 연산 수행                              |
 
+
+
+##### 집합 연산자
+
+UNION -> 여러 SQL문의 결과에 대한 합집합(중복 행 제거)
+
+UNION ALL -> 여러 SQL문의 결과에 대한 합집합(중복 행 제거 X)
+
+INTERSECTION -> 여러 SQL문의 결과에 대한 교집합(중복 행 제거)
+
+EXCEPT(MINUS) -> 앞의 SQL문의 결과와 뒤의 SQL문의 결과 사이의 차집합(중복 행 제거, 일부 제품 MINUS 사용)
+
+
+
+##### GROUP BY, HAVING
+
+- HAVING은 그룹제한조건 명령어이다.
+  - GROUP BY가 반드시 필요한 그룹제한조건 명령어이다.
+- GROUP BY 절을 이용해 그룹화한다.
+
+
+
+##### 서브쿼리
+
+다른 SQL문 안에 포함되어 WHERE 절, FROM 절, SELECT 절에 사용되는 또 다른 SQL문 안에 WHERE 절, FROM 절, SELECT 절에 사용이 가능하다.
+
+- 비상관 서브쿼리(서브쿼리가 메인쿼리의 칼럼을 가지고 있지 않은 상태), 상관 서브쿼리(서브쿼리가 메인쿼리의 칼럼을 가지고 있는 형태)
+- 단일 행 서브쿼리, 다중 행 서브쿼리, 다중 컬럼 서브쿼리
+
+
+
+##### 그룹 함수
+
+- ROLLUP() : 소계 등 중간 집계 값 산출, 칼럼 수보다 하나 더 큰 레벨만큼의 중간 집계값 생성
+- CUBE() : 결함 가능한 모든 값에 대한 다차원 집계를 생성하는 그룹 함수
+- GROUPING SETS() : 집계 대상 칼럼들에 대한 개별 집계를 구함. 칼럼 순서와 무관한 결과 생성.
+
+
+
+##### 윈도우 함수
+
+- 순위 관련 함수
+  - RANK(), DENSE_RANK(), ROW_NUMBER()
+  - SUM(), MAX(), MIN(), AVG(), COUNT()
+  - FIRST_VALUE(), LAST_VALUE(), LAG(), LEAD()
+  - CUME_DIST(), PERCENT_RANK(), NTILE()
