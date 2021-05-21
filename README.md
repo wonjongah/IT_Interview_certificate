@@ -7,7 +7,4 @@
 
 - IoT 지식 능력 검정 - IoT 지식 능력 검정 자격증 시험 공부 내용 및 정리
 
-
-
-## IT Back-end Interview
-
+- IT Back-end Interview - 백엔드 면접 공부
